@@ -248,7 +248,7 @@ class Beam:
                          'inverted': True}
         if ax is None:
             ax = plt.figure(figsize=(6, 2.5)).add_subplot(1,1,1)
-        ax.set_title("Loaded beam diagram")
+        ax.set_title("Diagrama - auua papai")
         self._plot_analytical(ax, sum(self._distributed_forces_y), **plot01_params)
         self._draw_beam_schematic(ax)
         return ax.get_figure()
@@ -256,7 +256,7 @@ class Beam:
     def plot_normal_force(self, ax=None):
         """Returns a plot of the normal force as a function of the x-coordinate.
         """
-        plot02_params = {'ylabel': "Normal force", 'yunits': r'kN',
+        plot02_params = {'ylabel': "Normal", 'yunits': r'kN',
                          # 'xlabel':"Beam axis", 'xunits':"m",
                          'color': "b"}
         if ax is None:
@@ -267,7 +267,7 @@ class Beam:
     def plot_shear_force(self, ax=None):
         """Returns a plot of the shear force as a function of the x-coordinate.
         """
-        plot03_params = {'ylabel': "Shear force", 'yunits': r'kN',
+        plot03_params = {'ylabel': "Cortante", 'yunits': r'kN',
                          # 'xlabel':"Beam axis", 'xunits':"m",
                          'color': "r"}
         if ax is None:
@@ -278,7 +278,7 @@ class Beam:
     def plot_bending_moment(self, ax=None):
         """Returns a plot of the bending moment as a function of the x-coordinate.
         """
-        plot04_params = {'ylabel': "Bending moment", 'yunits': r'kN·m',
+        plot04_params = {'ylabel': "Momento", 'yunits': r'kN·m',
                          'xlabel': "Beam axis", 'xunits': "m",
                          'color': "y"}
         if ax is None:
